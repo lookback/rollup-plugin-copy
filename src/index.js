@@ -81,8 +81,8 @@ export default function copy(options = {}) {
           }
 
           const matchedPaths = await globby(src, {
-            expandDirectories: false,
-            onlyFiles: false,
+            expandDirectories: true,
+            onlyFiles: true,
             ...restPluginOptions,
             ...restTargetOptions
           })
